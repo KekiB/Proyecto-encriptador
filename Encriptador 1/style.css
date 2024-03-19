@@ -15,10 +15,9 @@
     width: 10%;
 }
 main{
-    margin-left: auto;
     display: flex;
     margin-bottom: 10px;
-    margin-left: 350px;
+    margin-left: 525px;
     margin-right: auto;
 }
 
@@ -40,6 +39,7 @@ main{
     background: #FFFFFF;
     background-image: url(/Muñeco.png);
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 20px;
     color: #0A3871;
     margin-left: 110px;
@@ -80,6 +80,7 @@ main{
 }
 
 .btn-copiar{ 
+    cursor: copy;
     border: 0;
     background-color: #A290FF;
     border-radius: 20px;
@@ -89,4 +90,9 @@ main{
     margin-top: 576px;
     margin-left: 117px;
     position: absolute;
+}
+
+.pieDePagina{   
+    text-align: center;
+    font-size: 15px;
 }

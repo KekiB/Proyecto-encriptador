@@ -1,36 +1,41 @@
 <!DOCTYPE html>
     <html lang="en">
-        <head>
+    <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Ccopmatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
             <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
             <title>Encriptador de texto</title>
-        </head>
+</head>
+<body>
+    <header> 
+        <img src="/Logo.png" alt="Logo de alura" class="logo">
+    </header>
+        <main>
+            <section>
+            <textarea class="text-input" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <div>
+                <h2 class="informacion"> Solo letras minusculas y sin acento</h2>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick= "btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" id="" cols="20" rows="12"></textarea>
+            <div class="copiar">
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-        <body>
-            <header> 
-                <img src="/Logo.png" alt="Logo de alura" class="logo">
-            </header>
-            <main>
-                <section>
-                    <textarea class="text-input" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
-                    <div>
-                        <h2 class="informacion"> Solo letras minusculas y sin acento</h2>
-                    </div>
-                    <div class="botones">
-                        <button class="btn-encriptar">Encriptar</button>
-                        <button class="btn-desencriptar">Desencriptar</button>
-                    </div>
-                </section>
-                <section>
-                    <textarea class="mensaje" id="" cols="20" rows="12"></textarea>
-                    <div class="copiar">
-                        <button class="btn-copiar">Copiar</button>
-                    </div>
-                </section>
-            </main>
+        <p class="pieDePagina"> Desarollado por: ElKekiB &#169; 2024</p>
 
-        </body>
-    </html>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
